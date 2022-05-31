@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      font-size: 16px;
+     
+    }
+
+    body {
+      background-color: hsl(204, 43%, 93%);
+      box-sizing: border-box;
+
+    }
+
+    .main-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      overflow: auto;
+      border-radius: 17px;
+      width: 600px;
+      justify-content: center;
+
+    }
+
+    .container-top {
+      grid-column: 1/4;
+      background-color: white;
+      padding: 2em;
+    }
+
+    .container-top h2 {
+      font-family: 'Karla', sans-serif;
+      color: hsl(179, 62%, 43%);
+      font-size: 20px;
+
+    }
+
+    .container-top h3 {
+      font-family: 'Karla', sans-serif;
+      color: hsl(71, 73%, 54%);
+    }
+
+    .container-top p {
+      font-family: 'Karla', sans-serif;
+      line-height: 1.7em;
+    }
+
+    .container-bottom-left {
+
+      background-color: hsl(179, 62%, 43%);
+      padding: 2em;
+    }
+
+    .container-bottom-left h2 {
+      color: white;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .money {
+      color: white;
+      font-family: 'Karla', sans-serif;
+      font-size: 30px;
+    }
+
+    .container-bottom-left p {
+      color: hsl(203, 25%, 86%);
+      font-family: 'Karla', sans-serif;
+    }
+
+    .container-bottom-left .button {
+      text-align: center;
+      padding:2em 1.5em;
+    }
+
+    .container-bottom-left .button a {
+      color: hsl(203, 25%, 86%);
+      font-family: 'Karla', sans-serif;
+      text-decoration: none;
+      font-size:20px;
+      background-color:hsl(71, 65%, 52%);
+      padding:0.5em 3em;
+      border-radius: 10px;
+    }
+
+
+    #text-bottom {
+      color: white;
+    }
+
+    .container-bottom-right {
+      background-color: #4ABEBD;
+      padding: 2em;
+    }
+
+    .container-bottom-right h2 {
+      color: white;
+      font-family: 'Karla', sans-serif;
+    }
+
+    .container-bottom-right p {
+      color: white;
+      font-family: 'Karla', sans-serif;
+      line-height: 1.7em;
+    }
+  
+      
+    .attribution {
+      font-size: 11px;
+      
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+    @media screen and (max-width:400px) {
+     .main-container{
+       display: flex;
+       flex-direction: column;
+       width:100%;
+     }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg">
+    <div class="main-container">
+      <div class="container-top">
+
+        <h2>Join our community</h2>
+
+        <h3>30-day, hassle-free money back guarantee</h3>
+
+        <p>Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.</p>
+      </div>
+      <div class="container-bottom-left">
+        <h2>Monthly Subscription</h2>
+
+        <p><span class="money">&dollar;29 </span> per month</p>
+
+        <p id="text-bottom">Full access for less than &dollar;1 a day</p>
+        <div class="button">
+          <a href="#"> Sign Up </a>
+        </div>
+      </div>
+      <div class="container-bottom-right">
+        <h2>Why Us</h2>
+
+        <p>Tutorials by industry experts
+          Peer &amp; expert code review
+          Coding exercises
+          Access to our GitHub repos
+          Community forum
+          Flashcard decks
+          New videos every week</p>
+      </div>
+
+
+
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Umut Sözübir</a>
+      </p>
+    </footer>
+
+    
+</body>
+
+</html>
